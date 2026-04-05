@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClimaBaires | Instalación y Mantenimiento de Calderas y Climatización</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="ClimaBaires – Gasista matriculado. Instalación, reparación y mantenimiento de calderas, losas radiantes, radiadores, calefones, termotanques y climatización de piscinas en CABA y GBA. Servicio 24hs los 365 días del año." />
+  <meta name="keywords" content="instalación calderas, reparación calderas, mantenimiento calderas, losa radiante, climatización piscinas, radiadores, calefones, termotanques, gasista matriculado, plomero, climatización, calefacción, CABA, zona norte, zona sur, zona oeste, Buenos Aires, GBA, servicio 24 horas" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="ClimaBaires" />
+  <link rel="canonical" href="https://www.climabaires.com.ar/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.climabaires.com.ar/" />
+  <meta property="og:title" content="ClimaBaires | Instalación y Mantenimiento de Calderas y Climatización" />
+  <meta property="og:description" content="Instalación, reparación y mantenimiento de calderas, losas radiantes, climatización de piscinas, radiadores, calefones y termotanques. Gasista matriculado. Servicio 24hs." />
+  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Water_heater_ARISTON_-_thermotank.jpg/800px-Water_heater_ARISTON_-_thermotank.jpg" />
+  <meta property="og:image:alt" content="Termotanque instalado - ClimaBaires" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:site_name" content="ClimaBaires" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ClimaBaires | Calderas y Climatización" />
+  <meta name="twitter:description" content="Gasista matriculado. Instalación y mantenimiento de calderas, losa radiante, piscinas, radiadores y más. CABA y GBA." />
+  <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Water_heater_ARISTON_-_thermotank.jpg/800px-Water_heater_ARISTON_-_thermotank.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --color-a: #1a2e44;       /* Azul marino profundo */
+      --color-b: #f5f0eb;       /* Crema cálido */
+      --accent: #e05c1b;        /* Naranja fuego */
+      --accent-light: #f07d42;
+      --text-light: #ffffff;
+      --text-dark: #1a2e44;
+      --text-muted: #5a6a7a;
+      --whatsapp: #25D366;
+      --whatsapp-dark: #1ebe5d;
+      --border-radius: 12px;
+      --shadow: 0 4px 24px rgba(26,46,68,0.13);
+      --shadow-lg: 0 8px 40px rgba(26,46,68,0.2);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      background: var(--color-b);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4 { font-family: 'Raleway', sans-serif; }
+
+    /* ─── HERO ─────────────────────────────────────────── */
+    #hero {
+      position: relative;
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('hero1.webp');
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.28) saturate(0.6);
+      transform: scale(1.04);
+      transition: transform 8s ease;
+    }
+
+    #hero:hover .hero-bg { transform: scale(1.0); }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(160deg, rgba(26,46,68,0.72) 0%, rgba(224,92,27,0.18) 100%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 2rem 1.5rem;
+      max-width: 680px;
+      width: 100%;
+      animation: fadeUp 0.9s ease both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-logo .flame {
+      font-size: 2.6rem;
+      filter: drop-shadow(0 0 12px rgba(224,92,27,0.8));
+      animation: flicker 2.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes flicker {
+      0%   { filter: drop-shadow(0 0 10px rgba(224,92,27,0.7)); }
+      100% { filter: drop-shadow(0 0 22px rgba(240,125,66,1)); }
+    }
+
+    .hero-logo h1 {
+      font-size: clamp(2.4rem, 7vw, 4rem);
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+
+    .hero-logo h1 span { color: var(--accent-light); }
+
+    .hero-slogan {
+      font-family: 'Raleway', sans-serif;
+      font-size: clamp(1rem, 3.2vw, 1.35rem);
+      font-weight: 300;
+      color: rgba(255,255,255,0.82);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+
+    .hero-divider {
+      width: 60px;
+      height: 3px;
+      background: var(--accent);
+      margin: 0 auto 2rem;
+      border-radius: 2px;
+    }
+
+    .hero-phone {
+      font-family: 'Raleway', sans-serif;
+      font-size: clamp(1.5rem, 5vw, 2.2rem);
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 1px;
+      margin-bottom: 1.4rem;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    }
+
+    .hero-phone a { color: inherit; text-decoration: none; }
+    .hero-phone a:hover { color: var(--accent-light); }
+
+    .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      background: var(--whatsapp);
+      color: #fff;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      padding: 0.85rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-whatsapp:hover {
+      background: var(--whatsapp-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(37,211,102,0.5);
+    }
+
+    .btn-whatsapp svg { flex-shrink: 0; }
+
+    .hero-badge {
+      margin-top: 2rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      backdrop-filter: blur(8px);
+      border-radius: 50px;
+      padding: 0.5rem 1.3rem;
+      color: rgba(255,255,255,0.9);
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .hero-badge .star { color: var(--accent-light); }
+
+    /* ─── SECCIÓN FRASE ─────────────────────────────────── */
+    #frase {
+      background: var(--color-a);
+      padding: 5rem 1.5rem;
+      text-align: center;
+    }
+
+    .frase-inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .frase-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .frase-inner h2 {
+      font-size: clamp(1.6rem, 4.5vw, 2.4rem);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.25;
+      margin-bottom: 1.2rem;
+    }
+
+    .frase-inner h2 em {
+      font-style: normal;
+      color: var(--accent-light);
+    }
+
+    .frase-inner p {
+      color: rgba(255,255,255,0.72);
+      font-size: 1.05rem;
+      line-height: 1.7;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* ─── SERVICIOS ──────────────────────────────────────── */
+    #servicios {
+      background: var(--color-b);
+      padding: 5rem 1.5rem;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-tag {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      padding: 0.3rem 1rem;
+      border-radius: 50px;
+      margin-bottom: 0.9rem;
+    }
+
+    .section-header h2 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 900;
+      color: var(--color-a);
+      line-height: 1.2;
+    }
+
+    .section-header h2 span { color: var(--accent); }
+
+    .section-header p {
+      margin-top: 0.7rem;
+      color: var(--text-muted);
+      font-size: 1rem;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 600px) {
+      .cards-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (min-width: 900px) {
+      .cards-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .card {
+      background: #fff;
+      border-radius: var(--border-radius);
+      padding: 2rem 1.6rem;
+      box-shadow: var(--shadow);
+      border-top: 4px solid var(--accent);
+      transition: transform 0.25s, box-shadow 0.25s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(224,92,27,0.04) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .card-icon {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .card h3 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--color-a);
+      margin-bottom: 0.6rem;
+    }
+
+    .card p {
+      font-size: 0.93rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* badge GASISTA */
+    .gasista-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--color-a);
+      color: #fff;
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 0.45rem 1.1rem;
+      border-radius: 50px;
+      margin-top: 1rem;
+    }
+
+    /* ─── HORARIO ────────────────────────────────────────── */
+    #horario {
+      background: var(--color-a);
+      padding: 5rem 1.5rem;
+      text-align: center;
+    }
+
+    .horario-inner {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .horario-inner .big-clock {
+      font-size: 4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .horario-inner h2 {
+      font-size: clamp(1.8rem, 5vw, 2.8rem);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+
+    .horario-inner h2 em {
+      font-style: normal;
+      color: var(--accent-light);
+    }
+
+    .horario-inner p {
+      color: rgba(255,255,255,0.75);
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    .horario-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      justify-content: center;
+    }
+
+    .chip {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #fff;
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 0.5rem 1.2rem;
+      border-radius: 50px;
+      letter-spacing: 0.5px;
+    }
+
+    /* ─── HERO PEQUEÑO ───────────────────────────────────── */
+    .mini-hero {
+      position: relative;
+      height: 320px;
+      overflow: hidden;
+    }
+
+    @media (min-width: 768px) { .mini-hero { height: 420px; } }
+
+    .mini-hero-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.45) saturate(0.7);
+      transform: scale(1.05);
+      transition: transform 10s ease;
+    }
+
+    .mini-hero:hover .mini-hero-bg { transform: scale(1.0); }
+
+    .mini-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(26,46,68,0.65), rgba(224,92,27,0.2));
+    }
+
+    .mini-hero-content {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    .mini-hero-content h2 {
+      font-size: clamp(1.5rem, 4.5vw, 2.6rem);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.25;
+      text-shadow: 0 2px 16px rgba(0,0,0,0.5);
+      max-width: 640px;
+    }
+
+    .mini-hero-content h2 span { color: var(--accent-light); }
+
+    /* ─── TESTIMONIOS ────────────────────────────────────── */
+    #testimonios {
+      background: var(--color-b);
+      padding: 5rem 0;
+      overflow: hidden;
+    }
+
+    #testimonios .section-header {
+      padding: 0 1.5rem;
+    }
+
+    .testimonios-track-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      cursor: grab;
+    }
+
+    .testimonios-track-wrap::-webkit-scrollbar { display: none; }
+    .testimonios-track-wrap.dragging { cursor: grabbing; }
+
+    .testimonios-track {
+      display: flex;
+      gap: 1.4rem;
+      padding: 1rem 1.5rem 2rem;
+      width: max-content;
+    }
+
+    .testimonio-card {
+      background: #fff;
+      border-radius: var(--border-radius);
+      padding: 1.8rem 1.6rem;
+      width: 300px;
+      flex-shrink: 0;
+      box-shadow: var(--shadow);
+      border-left: 4px solid var(--accent);
+      transition: box-shadow 0.2s;
+    }
+
+    @media (min-width: 480px) { .testimonio-card { width: 340px; } }
+
+    .testimonio-card:hover { box-shadow: var(--shadow-lg); }
+
+    .stars {
+      color: #f5a623;
+      font-size: 1.1rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .testimonio-card p {
+      font-size: 0.95rem;
+      color: #444;
+      line-height: 1.68;
+      font-style: italic;
+      margin-bottom: 1.2rem;
+    }
+
+    .testimonio-author {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+    }
+
+    .author-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--color-a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .author-info strong {
+      display: block;
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--color-a);
+    }
+
+    .author-info span {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .scroll-hint {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      margin-top: 0.2rem;
+      padding: 0 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+    }
+
+    /* ─── ZONAS ──────────────────────────────────────────── */
+    #zonas {
+      background: var(--color-a);
+      padding: 5rem 1.5rem;
+    }
+
+    #zonas .section-header h2 { color: #fff; }
+    #zonas .section-header p { color: rgba(255,255,255,0.65); }
+
+    .zonas-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 600px) {
+      .zonas-grid { grid-template-columns: repeat(4, 1fr); }
+    }
+
+    .zona-card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: var(--border-radius);
+      padding: 1.6rem 1rem;
+      text-align: center;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .zona-card:hover {
+      background: rgba(255,255,255,0.13);
+      transform: translateY(-4px);
+    }
+
+    .zona-card .zona-icon { font-size: 2rem; margin-bottom: 0.6rem; }
+
+    .zona-card h3 {
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+    }
+
+    .zona-card p {
+      color: rgba(255,255,255,0.6);
+      font-size: 0.8rem;
+    }
+
+    /* ─── FOOTER ─────────────────────────────────────────── */
+    footer {
+      background: #0e1c2b;
+      color: rgba(255,255,255,0.85);
+      padding: 3.5rem 1.5rem 2rem;
+      text-align: center;
+    }
+
+    .footer-logo {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: #fff;
+      margin-bottom: 0.3rem;
+    }
+
+    .footer-logo span { color: var(--accent-light); }
+
+    .footer-tagline {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 1.8rem;
+    }
+
+    .footer-phone {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 1.2rem;
+    }
+
+    .footer-phone a { color: inherit; text-decoration: none; }
+    .footer-phone a:hover { color: var(--accent-light); }
+
+    .footer-cta {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.7);
+      margin-top: 1.4rem;
+      margin-bottom: 0.5rem;
+      font-style: italic;
+    }
+
+    .footer-bottom {
+      margin-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 1.2rem;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.35);
+    }
+
+    /* Floating WhatsApp */
+    .float-wa {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      z-index: 999;
+      width: 58px;
+      height: 58px;
+      background: var(--whatsapp);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.5);
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      animation: pulse 2.5s ease infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.5); }
+      50% { box-shadow: 0 4px 32px rgba(37,211,102,0.8); }
+    }
+
+    .float-wa:hover {
+      transform: scale(1.1);
+      animation: none;
+      box-shadow: 0 6px 28px rgba(37,211,102,0.7);
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- ── Floating WhatsApp ── -->
+<a class="float-wa" href="https://wa.me/5491151257894?text=Hola%2C%20me%20comunico%20desde%20la%20web%20ClimaBaires.%20Quisiera%20hacer%20una%20consulta." target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16 2.667C8.636 2.667 2.667 8.636 2.667 16c0 2.352.632 4.555 1.731 6.456L2.667 29.333l7.09-1.693A13.267 13.267 0 0016 29.333c7.364 0 13.333-5.97 13.333-13.333S23.364 2.667 16 2.667z" fill="#fff"/>
+    <path d="M22.5 19.5c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.67-2.09-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01s-.52.07-.8.37c-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.7.63.72.23 1.37.2 1.89.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.19-.57-.34z" fill="#25D366"/>
+  </svg>
+</a>
+
+<!-- ── 1. HERO ── -->
+<section id="hero" itemscope itemtype="https://schema.org/LocalBusiness">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-logo">
+      <span class="flame">🔥</span>
+      <h1 itemprop="name">Clima<span>Baires</span></h1>
+    </div>
+    <p class="hero-slogan" itemprop="slogan">Soluciones de calefacción</p>
+    <div class="hero-divider"></div>
+    <div class="hero-phone" itemprop="telephone">
+      <a href="tel:+5491151257894">📞 11 5125-7894</a>
+    </div>
+    <a class="btn-whatsapp"
+       href="https://wa.me/5491151257894?text=Hola%2C%20me%20comunico%20desde%20la%20web%20ClimaBaires.%20Quisiera%20hacer%20una%20consulta."
+       target="_blank" rel="noopener">
+      <svg width="22" height="22" viewBox="0 0 32 32" fill="none">
+        <path d="M16 2.667C8.636 2.667 2.667 8.636 2.667 16c0 2.352.632 4.555 1.731 6.456L2.667 29.333l7.09-1.693A13.267 13.267 0 0016 29.333c7.364 0 13.333-5.97 13.333-13.333S23.364 2.667 16 2.667z" fill="#fff"/>
+        <path d="M22.5 19.5c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.67-2.09-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01s-.52.07-.8.37c-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.7.63.72.23 1.37.2 1.89.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.19-.57-.34z" fill="#25D366"/>
+      </svg>
+      Contactar por WhatsApp
+    </a>
+    <div class="hero-badge">
+      <span class="star">⭐</span> Más de 10 años de experiencia
+    </div>
+  </div>
+</section>
+
+<!-- ── 2. FRASE ── -->
+<section id="frase">
+  <div class="frase-inner">
+    <span class="frase-icon">🏠</span>
+    <h2>Tu hogar merece el mejor <em>confort térmico</em>, sin excusas y sin esperas.</h2>
+    <p>En ClimaBaires sabemos que cuando el calor falla, todo se detiene. Por eso trabajamos con la máxima profesionalidad, materiales de primera calidad y la experiencia de más de una década brindando soluciones reales a hogares y empresas de Buenos Aires.</p>
+  </div>
+</section>
+
+<!-- ── 3. SERVICIOS ── -->
+<section id="servicios">
+  <div class="section-header">
+    <span class="section-tag">Nuestros Servicios</span>
+    <h2>Todo lo que necesitás <span>bajo un mismo techo</span></h2>
+    <p>Instalación, reparación y mantenimiento con garantía y respaldo profesional.</p>
+  </div>
+
+  <div class="cards-grid">
+
+    <article class="card">
+      <span class="card-icon">🔥</span>
+      <h3>Calderas</h3>
+      <p>Instalación, reparación y mantenimiento de calderas a gas de todas las marcas. Diagnóstico preciso, repuestos originales y servicio garantizado para que tu calefacción central nunca falle.</p>
+      <span class="gasista-badge">⚙️ Gasista Matriculado</span>
+    </article>
+
+    <article class="card">
+      <span class="card-icon">🏊</span>
+      <h3>Climatización de Piscinas</h3>
+      <p>Instalamos y mantenemos sistemas de climatización para piscinas residenciales y comerciales. Disfrutá del agua a temperatura ideal durante todo el año con tecnología eficiente.</p>
+    </article>
+
+    <article class="card">
+      <span class="card-icon">🌡️</span>
+      <h3>Losa Radiante</h3>
+      <p>Diseño e instalación de sistemas de losa radiante hidráulica y eléctrica. La forma más confortable y eficiente de calefaccionar, con calor distribuido uniformemente en cada ambiente.</p>
+    </article>
+
+    <article class="card">
+      <span class="card-icon">🏠</span>
+      <h3>Radiadores</h3>
+      <p>Instalación y reemplazo de radiadores de aluminio, hierro y acero. Mantenimiento, purga de sistema y regulación de válvulas para máximo rendimiento energético.</p>
+    </article>
+
+    <article class="card">
+      <span class="card-icon">🚿</span>
+      <h3>Calefones y Termotanques</h3>
+      <p>Instalación, reparación y reemplazo de calefones a gas y termotanques eléctricos y a gas. Agua caliente garantizada en tu hogar con equipos de primera línea.</p>
+      <span class="gasista-badge">⚙️ Gasista Matriculado</span>
+    </article>
+
+    <article class="card" style="border-color: var(--color-a);">
+      <span class="card-icon">🛠️</span>
+      <h3>Mantenimiento Preventivo</h3>
+      <p>Revisiones periódicas de todos tus equipos de calefacción y climatización. Prevenimos fallas antes de que ocurran y prolongamos la vida útil de tus instalaciones.</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- ── 4. HORARIO ── -->
+<section id="horario">
+  <div class="horario-inner">
+    <div class="big-clock">⏰</div>
+    <h2>Servicio <em>24 horas,</em><br/>los 365 días del año</h2>
+    <p>Las emergencias no esperan. Nuestro equipo está disponible las 24 horas del día, todos los días del año, incluyendo fines de semana y feriados. Un técnico especializado llega a tu domicilio cuando más lo necesitás.</p>
+    <div class="horario-chips">
+      <span class="chip">🌙 Guardias nocturnas</span>
+      <span class="chip">📅 Fines de semana</span>
+      <span class="chip">🎆 Feriados</span>
+      <span class="chip">⚡ Urgencias</span>
+      <span class="chip">🔧 Sin cargo de llamada</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── 5. MINI HERO (hero2) ── -->
+<div class="mini-hero" aria-label="Climatización de piscinas">
+  <div class="mini-hero-bg" style="background-image: url('hero2.webp');"></div>
+  <div class="mini-hero-overlay"></div>
+  <div class="mini-hero-content">
+    <h2>Climatizamos tu piscina para que la disfrutes <span>todo el año</span></h2>
+  </div>
+</div>
+
+<!-- ── 6. TESTIMONIOS ── -->
+<section id="testimonios">
+  <div class="section-header">
+    <span class="section-tag">Testimonios</span>
+    <h2>Lo que dicen nuestros <span>clientes</span></h2>
+    <p>Deslizá para ver más opiniones reales.</p>
+  </div>
+
+  <div class="testimonios-track-wrap" id="trackWrap">
+    <div class="testimonios-track" id="track">
+
+      <div class="testimonio-card">
+        <div class="stars">★★★★★</div>
+        <p>"Tuve una falla en la caldera un domingo a la noche y en menos de una hora ya había un técnico en mi casa. Solucionó el problema rápidamente y con muy buen precio. Totalmente recomendable."</p>
+        <div class="testimonio-author">
+          <div class="author-avatar">E</div>
+          <div class="author-info">
+            <strong>Emanuel G.</strong>
+            <span>Caballito, CABA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonio-card">
+        <div class="stars">★★★★★</div>
+        <p>"Contraté a ClimaBaires para instalar la losa radiante en toda la planta baja. El trabajo quedó impecable, limpio y en tiempo. Se nota que son profesionales serios. Muy conforme con el resultado."</p>
+        <div class="testimonio-author">
+          <div class="author-avatar">N</div>
+          <div class="author-info">
+            <strong>Nicolás P.</strong>
+            <span>Palermo, CABA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonio-card">
+        <div class="stars">★★★★★</div>
+        <p>"Me instalaron el termotanque nuevo en un par de horas. Fueron puntuales, explicaron todo, dejaron el lugar limpio y hasta me asesoraron sobre el mejor equipo para mis necesidades. Excelente atención."</p>
+        <div class="testimonio-author">
+          <div class="author-avatar">R</div>
+          <div class="author-info">
+            <strong>Roberto M.</strong>
+            <span>San Martín, Zona Oeste</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonio-card">
+        <div class="stars">★★★★★</div>
+        <p>"Llevaba meses con el problema de los radiadores fríos en el primer piso. ClimaBaires vino, diagnosticó el problema de inmediato y lo resolvió ese mismo día. Por fin tenemos calor parejo en toda la casa."</p>
+        <div class="testimonio-author">
+          <div class="author-avatar">M</div>
+          <div class="author-info">
+            <strong>Marta L.</strong>
+            <span>Tigre, Zona Norte</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonio-card">
+        <div class="stars">★★★★★</div>
+        <p>"Contraté el mantenimiento anual de la caldera y fue todo un alivio. Me dieron un informe detallado del estado del equipo y me explicaron qué necesitaba atención. Muy responsables y honestos."</p>
+        <div class="testimonio-author">
+          <div class="author-avatar">C</div>
+          <div class="author-info">
+            <strong>Clara F.</strong>
+            <span>Quilmes, Zona Sur</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonio-card">
+        <div class="stars">★★★★★</div>
+        <p>"Climatizaron la piscina de mi casa y el trabajo quedó perfecto. Además me asesoraron sobre cómo optimizar el consumo. En invierno seguimos usando la pileta. No me lo hubiese imaginado antes. ¡Gracias!"</p>
+        <div class="testimonio-author">
+          <div class="author-avatar">A</div>
+          <div class="author-info">
+            <strong>Andrea S.</strong>
+            <span>Vicente López, Zona Norte</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <p class="scroll-hint">👆 Arrastrá para ver más comentarios</p>
+</section>
+
+<!-- ── 7. MINI HERO (hero3) ── -->
+<div class="mini-hero" aria-label="Radiadores de calidad">
+  <div class="mini-hero-bg" style="background-image: url('hero3.webp');"></div>
+  <div class="mini-hero-overlay"></div>
+  <div class="mini-hero-content">
+    <h2>Radiadores de alta eficiencia para el <span>hogar que merecés</span></h2>
+  </div>
+</div>
+
+<!-- ── 8. ZONAS ── -->
+<section id="zonas">
+  <div class="section-header">
+    <span class="section-tag">Cobertura</span>
+    <h2>Zonas de <span style="color:var(--accent-light)">servicio</span></h2>
+    <p>Llegamos a toda el área metropolitana de Buenos Aires.</p>
+  </div>
+
+  <div class="zonas-grid">
+    <div class="zona-card">
+      <div class="zona-icon">🏙️</div>
+      <h3>CABA</h3>
+      <p>Ciudad Autónoma de Buenos Aires</p>
+    </div>
+    <div class="zona-card">
+      <div class="zona-icon">🌳</div>
+      <h3>Zona Norte</h3>
+      <p>Tigre, Pilar, San Isidro, Vicente López y más</p>
+    </div>
+    <div class="zona-card">
+      <div class="zona-icon">🏭</div>
+      <h3>Zona Oeste</h3>
+      <p>Morón, San Martín, Merlo, Ituzaingó y más</p>
+    </div>
+    <div class="zona-card">
+      <div class="zona-icon">🌊</div>
+      <h3>Zona Sur</h3>
+      <p>Quilmes, Avellaneda, Lanús, Lomas de Zamora y más</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── 9. FOOTER ── -->
+<footer>
+  <div class="footer-logo">Clima<span>Baires</span></div>
+  <p class="footer-tagline">Soluciones de calefacción</p>
+  <div class="footer-phone">
+    <a href="tel:+5491151257894">📞 11 5125-7894</a>
+  </div>
+  <a class="btn-whatsapp"
+     href="https://wa.me/5491151257894?text=Hola%2C%20me%20comunico%20desde%20la%20web%20ClimaBaires.%20Quisiera%20hacer%20una%20consulta."
+     target="_blank" rel="noopener">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="none">
+      <path d="M16 2.667C8.636 2.667 2.667 8.636 2.667 16c0 2.352.632 4.555 1.731 6.456L2.667 29.333l7.09-1.693A13.267 13.267 0 0016 29.333c7.364 0 13.333-5.97 13.333-13.333S23.364 2.667 16 2.667z" fill="#fff"/>
+      <path d="M22.5 19.5c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.67-2.09-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01s-.52.07-.8.37c-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.7.63.72.23 1.37.2 1.89.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.19-.57-.34z" fill="#25D366"/>
+    </svg>
+    Escribinos por WhatsApp
+  </a>
+  <p class="footer-cta">¿Necesitás calefacción? No esperes más, <strong style="color:#fff;">llamanos ahora.</strong></p>
+  <div class="footer-bottom">
+    &copy; 2025 ClimaBaires · Todos los derechos reservados · Gasista Matriculado · CABA y Gran Buenos Aires
+  </div>
+</footer>
+
+<script>
+  // Drag-to-scroll testimonios
+  const wrap = document.getElementById('trackWrap');
+  let isDown = false, startX, scrollLeft;
+
+  wrap.addEventListener('mousedown', e => {
+    isDown = true;
+    wrap.classList.add('dragging');
+    startX = e.pageX - wrap.offsetLeft;
+    scrollLeft = wrap.scrollLeft;
+  });
+  wrap.addEventListener('mouseleave', () => { isDown = false; wrap.classList.remove('dragging'); });
+  wrap.addEventListener('mouseup', () => { isDown = false; wrap.classList.remove('dragging'); });
+  wrap.addEventListener('mousemove', e => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - wrap.offsetLeft;
+    wrap.scrollLeft = scrollLeft - (x - startX) * 1.2;
+  });
+
+  // Intersection Observer - fade in cards
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.card, .zona-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease, box-shadow 0.25s';
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>
